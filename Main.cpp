@@ -34,19 +34,19 @@ int main() {
 		else {
 			cl_child1* c1 = new cl_child1(c1ptr, name);
 			c1ptr->Push(c1);
-			
+
 			temp = c1ptr;
+			c1ptr = c1;
 
 		}
 
-		
-		
+
+
 	};
 
 
 	baseptr->Print_Tree();
-	
 	delete baseptr;
-	delete c1ptr;
+
 	return 0;
 }

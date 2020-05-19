@@ -40,3 +40,23 @@ void Base::Print_Tree()
 		}
 	}
 }
+
+Base::~Base()
+{
+
+
+	for (int i = 0; i < children.size(); i++) {
+		delete children[i];
+	}
+
+	
+
+	for (int i = 0; i < children.size(); i++) {
+		if (children[i]->children.size() != 0) {
+			children[i]->~Base();
+		}
+
+		
+	}
+	
+}

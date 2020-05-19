@@ -21,5 +21,6 @@ public:
 	string Get_Name();
 	void Push(Base* base_ptr);
 	void Print_Tree();
+	~Base();
 };
 
